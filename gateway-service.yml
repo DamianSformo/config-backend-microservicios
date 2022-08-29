@@ -9,11 +9,11 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: movieRoute #Identificando la ruta del service de producto
-          uri: http://localhost:8011/ #URL donde se hará el redirect segun el predicate definido
-          predicates: #RReglas de análisis de una request
+        - id: movieRoute
+          uri: lb://movie-service
+          predicates:
             - Path=/movie/**
-        - id: catalogRoute #Identificando la ruta del service de producto
-          uri: http://localhost:8002/ #URL donde se hará el redirect segun el predicate definido
-          predicates: #RReglas de análisis de una request
+        - id: catalogRoute
+          uri: lb://catalog-service
+          predicates:
             - Path=/catalog/**
