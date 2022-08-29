@@ -1,5 +1,5 @@
 server:
-  port: 8015
+  port: 8002
   servlet:
     context-path: /movies/
 
