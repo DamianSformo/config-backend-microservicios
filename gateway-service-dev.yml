@@ -17,10 +17,10 @@ spring:
     gateway:
       routes:
         - id: movieRoute
-          uri: http://localhost:8011/
+          uri: lb://movie-service-dev
           predicates:
             - Path=/movie/**
-        - id: catalogRoute
-          uri: http://localhost:8002/
+        - id: CatalogRoute
+          uri: lb://catalog-service-dev
           predicates:
             - Path=/catalog/**
