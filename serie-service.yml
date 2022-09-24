@@ -6,7 +6,7 @@ server:
 spring:
   data:
     mongodb:
-      database: dhouse
+      database: serie
       port: 27017
 
 eureka:

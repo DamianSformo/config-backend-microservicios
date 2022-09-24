@@ -3,6 +3,12 @@ server:
   servlet:
     context-path: /catalog/
 
+spring:
+  data:
+    mongodb:
+      database: catalog
+      port: 27017
+
 eureka:
   instance:
     hostname: localhost
