@@ -9,6 +9,8 @@ spring:
       database: catalog
       port: 27017
 
+      auto-index-creation: true
+
 eureka:
   instance:
     hostname: localhost
