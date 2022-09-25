@@ -21,6 +21,9 @@ message: Hello from Catalog Server
 
 management:
   endpoints:
+    web:
+      exposure:
+        include: '*'
     webs:
       exposure:
         include: circuitbreakers, circuitbreakerevents, health, info, ratelimiters, metrics
