@@ -1,8 +1,6 @@
 server:
   port: 8002
-  servlet:
-    context-path: /movies/
-
+  
 spring:
   jpa:
     open-in-view: 'false'
